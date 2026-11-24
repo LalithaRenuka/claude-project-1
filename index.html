@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lalitha Renuka Kotipalli | Portfolio</title>
+<meta name="description" content="Portfolio of Lalitha Renuka Kotipalli, B.Tech CSE student, frontend developer and AI &amp; cyber security enthusiast.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- NAVBAR -->
+<header class="nav" id="nav">
+  <a href="#home" class="logo">LR<span>.</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#experience">Internship</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">🌙</button>
+    <button class="icon-btn burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <canvas id="network"></canvas>
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="hero-inner">
+    <div class="hero-text reveal">
+      <p class="hello">👋 Hello, I'm</p>
+      <h1 class="grad-text">Lalitha Renuka Kotipalli</h1>
+      <h2 class="typing"><span id="typed"></span><span class="caret">|</span></h2>
+      <p class="lead">B.Tech CSE student at GITAM with a passion for building clean interfaces, solid databases and secure systems.</p>
+      <div class="cta">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn ghost">Contact Me</a>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/LalithaRenuka" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/lalitharenuka" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=klrenuka007@gmail.com" target="_blank" rel="noopener" aria-label="Email">Email</a>
+      </div>
+    </div>
+    <div class="hero-art reveal">
+      <div class="avatar">
+        <div class="ring r1"></div><div class="ring r2"></div>
+        <div class="avatar-core">LR</div>
+        <span class="orbit o1">C</span><span class="orbit o2">Py</span><span class="orbit o3">SQL</span><span class="orbit o4">JS</span>
+      </div>
+    </div>
+  </div>
+  <div class="stats reveal">
+    <div class="stat"><b data-count="8.86" data-dec="2">0</b><small>B.Tech GPA</small></div>
+    <div class="stat"><b data-count="6">0</b><small>Projects</small></div>
+    <div class="stat"><b data-count="4">0</b><small>Certifications</small></div>
+    <div class="stat"><b data-count="2">0</b><small>Internships</small></div>
+  </div>
+  <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <h2 class="title reveal"><span>01.</span> About Me</h2>
+    <div class="about-grid">
+      <div class="card glass reveal">
+        <h3>Professional Title</h3>
+        <ul class="ticks">
+          <li>I am flexible, reliable and pretty quick learner</li>
+          <li>I am able to work both in team environment as well as using own initiative</li>
+        </ul>
+        <h3>Areas of Interest</h3>
+        <div class="chips">
+          <span class="chip">🤖 Artificial Intelligence</span>
+          <span class="chip">🛡️ Cyber Security</span>
+          <span class="chip">🗄️ Database Management Systems</span>
+        </div>
+      </div>
+      <div class="card glass reveal">
+        <h3>Quick Facts</h3>
+        <dl class="facts">
+          <dt>Name</dt><dd>Lalitha Renuka Kotipalli</dd>
+          <dt>Studying</dt><dd>B.Tech CSE, GITAM (2022–2026)</dd>
+          <dt>Location</dt><dd>Visakhapatnam</dd>
+          <dt>Phone</dt><dd><a href="tel:+919177832325">+91-9177832325</a></dd>
+          <dt>Email</dt><dd><a href="https://mail.google.com/mail/?view=cm&fs=1&to=klrenuka007@gmail.com" target="_blank" rel="noopener">klrenuka007@gmail.com</a></dd>
+          <dt>Languages</dt><dd>Telugu · English · Hindi</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section alt" id="skills">
+  <div class="container">
+    <h2 class="title reveal"><span>02.</span> Skills</h2>
+    <p class="sub reveal">Hover over a skill, or switch tabs to explore every category.</p>
+    <div class="tabs reveal" role="tablist">
+      <button class="tab active" data-tab="prog" role="tab">💻 Programming</button>
+      <button class="tab" data-tab="tools" role="tab">🧰 Tools &amp; Frameworks</button>
+      <button class="tab" data-tab="soft" role="tab">🤝 Soft Skills</button>
+      <button class="tab" data-tab="lang" role="tab">🗣️ Languages</button>
+    </div>
+    <div class="tab-panels">
+      <div class="panel active" id="tab-prog">
+        <div class="skill-grid">
+          <div class="skill"><i>C</i><span>C</span></div>
+          <div class="skill"><i>🐍</i><span>Python</span></div>
+          <div class="skill"><i>☕</i><span>Java</span></div>
+          <div class="skill"><i>🗃️</i><span>SQL</span></div>
+          <div class="skill"><i>🌐</i><span>HTML</span></div>
+          <div class="skill"><i>JS</i><span>JavaScript</span></div>
+        </div>
+      </div>
+      <div class="panel" id="tab-tools">
+        <div class="skill-grid">
+          <div class="skill"><i>🗄️</i><span>DBMS</span></div>
+          <div class="skill"><i>🐉</i><span>Kali Linux</span></div>
+          <div class="skill"><i>🐬</i><span>MySQL</span></div>
+          <div class="skill"><i>🎨</i><span>CSS</span></div>
+          <div class="skill"><i>🎮</i><span>Unity</span></div>
+          <div class="skill"><i>🧊</i><span>Blender</span></div>
+          <div class="skill"><i>⚙️</i><span>Fusion 360</span></div>
+          <div class="skill"><i>📎</i><span>Microsoft Office</span></div>
+        </div>
+      </div>
+      <div class="panel" id="tab-soft">
+        <div class="skill-grid">
+          <div class="skill"><i>🧩</i><span>Problem Solving</span></div>
+          <div class="skill"><i>💬</i><span>Communication</span></div>
+          <div class="skill"><i>👥</i><span>Teamwork</span></div>
+          <div class="skill"><i>📊</i><span>Presentation Skills</span></div>
+        </div>
+      </div>
+      <div class="panel" id="tab-lang">
+        <div class="lang-grid">
+          <div class="lang"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="42"/><circle class="fg" cx="50" cy="50" r="42" data-pct="100"/></svg><b>Telugu</b><small>Native</small></div>
+          <div class="lang"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="42"/><circle class="fg" cx="50" cy="50" r="42" data-pct="85"/></svg><b>English</b><small>Fluent</small></div>
+          <div class="lang"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="42"/><circle class="fg" cx="50" cy="50" r="42" data-pct="60"/></svg><b>Hindi</b><small>Conversational</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="container">
+    <h2 class="title reveal"><span>03.</span> Projects</h2>
+    <p class="sub reveal">Click any card for full details.</p>
+    <div class="filters reveal">
+      <button class="filter active" data-f="all">All</button>
+      <button class="filter" data-f="iot">IoT</button>
+      <button class="filter" data-f="ml">Machine Learning</button>
+      <button class="filter" data-f="web">Web</button>
+      <button class="filter" data-f="db">Database</button>
+      <button class="filter" data-f="desktop">Desktop</button>
+    </div>
+    <div class="proj-grid">
+      <article class="proj glass tilt reveal" data-cat="web" data-id="resumeweb" tabindex="0">
+        <div class="proj-top"><span class="date">11-2026</span><span class="role">Individual Project</span></div>
+        <h3>Resume Webpage</h3>
+        <h4>Interactive Portfolio Website</h4>
+        <p>Designed and built this responsive, blue-themed portfolio from scratch using only HTML, CSS and JavaScript, featuring animations, interactive skills and project sections, and a dark/light mode.</p>
+        <div class="chips sm"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Canvas</span></div>
+        <div class="proj-links"><a href="https://github.com/LalithaRenuka/resumewebpage" target="_blank" rel="noopener">Git link ↗</a><span class="more">Details →</span></div>
+      </article>
+      <article class="proj glass tilt reveal" data-cat="iot" data-id="iot" tabindex="0">
+        <div class="proj-top"><span class="date">04-2026</span><span class="role">Team Lead</span></div>
+        <div class="award">🏆 Top 4 in the university among 350 projects</div>
+        <h3>Smart Home IoT</h3>
+        <h4>Intelligent Living Ecosystem</h4>
+        <p>Developed a low-cost IoT smart home automation system using ESP8266 NodeMCU with multiple sensors for real-time environmental monitoring, motion detection and home security.</p>
+        <div class="chips sm"><span>ESP8266 NodeMCU</span><span>MicroPython</span><span>DHT11</span><span>PIR</span><span>LDR</span><span>MQ-135</span><span>Relay</span><span>Wi-Fi</span></div>
+        <div class="proj-links"><a href="https://docs.google.com/presentation/d/1ES17lfMBqedLB_pAktjHk_jLwdMvbzCW/edit?usp=sharing&amp;ouid=114251706006200604941&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener">Report PPT ↗</a><span class="more">Details →</span></div>
+      </article>
+      <article class="proj glass tilt reveal" data-cat="ml" data-id="salary" tabindex="0">
+        <div class="proj-top"><span class="date">06-2025</span><span class="role">Developer</span></div>
+        <h3>Employee Salary Prediction System</h3>
+        <h4>Machine Learning · Streamlit Web App</h4>
+        <p>Developed an end-to-end machine learning solution to predict income categories from structured datasets, achieving ~90% accuracy and deployed as a real-time Streamlit web app.</p>
+        <div class="chips sm"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Supervised Learning</span><span>Streamlit</span></div>
+        <div class="proj-links"><a href="https://github.com/LalithaRenuka/employeesalaryprediction" target="_blank" rel="noopener">Git link ↗</a><span class="more">Details →</span></div>
+      </article>
+      <article class="proj glass tilt reveal" data-cat="web" data-id="ridewise" tabindex="0">
+        <div class="proj-top"><span class="date">03-2025</span><span class="role">Frontend Developer</span></div>
+        <h3>RideWise</h3>
+        <h4>Ride and Flight Ticket Cost Prediction Website</h4>
+        <p>Developed a user interface for a ride history management system that allows users to compare ride prices, view detailed ride logs, and access real-time flight options with multi-currency support.</p>
+        <div class="chips sm"><span>HTML</span><span>CSS</span><span>Google Flights API</span><span>Currency Converter API</span></div>
+        <div class="proj-links"><a href="https://github.com/LalithaRenuka/wadcasestudy" target="_blank" rel="noopener">Git link ↗</a><span class="more">Details →</span></div>
+      </article>
+      <article class="proj glass tilt reveal" data-cat="db" data-id="species" tabindex="0">
+        <div class="proj-top"><span class="date">10-2024</span><span class="role">Team Lead</span></div>
+        <h3>Protection of Endangered Species</h3>
+        <h4>DBMS Case Study</h4>
+        <p>Led a team project to design and implement a relational database system for managing data related to endangered species, threats, conservation efforts, and legal frameworks.</p>
+        <div class="chips sm"><span>E-R Modeling</span><span>Normalization</span><span>SQL</span><span>PL/SQL</span><span>Triggers</span><span>Views</span></div>
+        <div class="proj-links"><a href="https://drive.google.com/file/d/1k5TO-7kwY5WybiZwv4rFwxL0AZxmcQA7/view?usp=sharing" target="_blank" rel="noopener">Report link ↗</a><span class="more">Details →</span></div>
+      </article>
+      <article class="proj glass tilt reveal" data-cat="desktop" data-id="expense" tabindex="0">
+        <div class="proj-top"><span class="date">04-2024</span><span class="role">Individual Project</span></div>
+        <h3>Expense Tracker</h3>
+        <h4>GUI with Python Tkinter</h4>
+        <p>Created a standalone GUI-based application to manage daily personal expenses. Users can add, edit, delete, and view transactions, and get an instant summary of their total spending.</p>
+        <div class="chips sm"><span>Python</span><span>Tkinter</span></div>
+        <div class="proj-links"><a href="https://github.com/LalithaRenuka/expensetrackerpython" target="_blank" rel="noopener">Git link ↗</a><span class="more">Details →</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="section alt" id="certifications">
+  <div class="container">
+    <h2 class="title reveal"><span>04.</span> Certifications</h2>
+    <p class="sub reveal">Click a credential ID to copy it.</p>
+    <div class="cert-grid">
+      <div class="cert shine reveal">
+        <div class="badge">🧪</div>
+        <h3>Software Testing</h3><p class="issuer">NPTEL</p>
+        <a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM1/Ecertificates/106/noc25-cs66/Course/NPTEL25CS66S43270160101309893.pdf" class="btn small" target="_blank" rel="noopener">View Certificate ↗</a>
+      </div>
+      <div class="cert shine reveal">
+        <div class="badge">🤖</div>
+        <h3>Artificial Intelligence Fundamentals</h3><p class="issuer">IBM SkillsBuild</p>
+        <a href="https://www.credly.com/badges/4193c154-c2b0-4832-9641-9568b7b48d35" class="btn small" target="_blank" rel="noopener">View Certificate ↗</a>
+      </div>
+      <div class="cert shine reveal">
+        <div class="badge">⚙️</div>
+        <h3>Autodesk Fusion 360 Integrated CAD/CAM/CAE</h3><p class="issuer">Coursera</p>
+        <button class="cred" data-id="UK3JMB5D38R5" title="Click to copy">ID: UK3JMB5D38R5 <em>copy</em></button>
+      </div>
+      <div class="cert shine reveal">
+        <div class="badge">🧠</div>
+        <h3>Effective Problem Solving and Decision Making</h3><p class="issuer">Coursera</p>
+        <button class="cred" data-id="SDCXMNVNUTMB" title="Click to copy">ID: SDCXMNVNUTMB <em>copy</em></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERNSHIP -->
+<section class="section" id="experience">
+  <div class="container">
+    <h2 class="title reveal"><span>05.</span> Internship</h2>
+    <div class="card glass intern reveal">
+      <div class="intern-icon">🛡️</div>
+      <div>
+        <span class="date">06-2025</span>
+        <h3>Ethical Hacking Virtual Internship</h3>
+        <p class="issuer">AICTE Eduskills</p>
+        <p>Gained foundational experience in emerging technologies and industry-aligned tools through guided virtual projects and learning modules.</p>
+        <a href="https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=ef70bcb839e5850ba6b23a6e4dbc1f77" class="btn small" target="_blank" rel="noopener">Certificate ↗</a>
+      </div>
+    </div>
+    <div class="card glass intern reveal">
+      <div class="intern-icon">🤖</div>
+      <div>
+        <span class="date">6-Week Program</span>
+        <h3>Artificial Intelligence &amp; Machine Learning Virtual Internship</h3>
+        <p class="issuer">Edunet Foundation (AICTE &amp; IBM SkillsBuild)</p>
+        <p>Gained hands-on experience in data preprocessing, transformation, and ML workflows during a 6-week internship. Worked with real-world datasets using Python (Pandas, NumPy, Scikit-learn) and deployed a Streamlit application for real-time predictions.</p>
+        <div class="chips sm"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>Streamlit</span></div>
+        <a href="https://drive.google.com/file/d/1qf4jBcX6RiTSHSq3k2-KnWzyOZVSF63i/view?usp=sharing" class="btn small" target="_blank" rel="noopener">Certificate ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section alt" id="education">
+  <div class="container">
+    <h2 class="title reveal"><span>06.</span> Education</h2>
+    <div class="timeline">
+      <div class="t-item reveal">
+        <span class="dot"></span>
+        <div class="card glass">
+          <span class="date">2022 – 2026</span>
+          <h3>Gandhi Institute of Technology and Management (GITAM), Visakhapatnam</h3>
+          <p>Bachelor of Technology (B.Tech), CSE</p>
+          <strong class="score">G.P.A: 8.86</strong>
+        </div>
+      </div>
+      <div class="t-item reveal">
+        <span class="dot"></span>
+        <div class="card glass">
+          <span class="date">2020 – 2022</span>
+          <h3>Sri Viswa Junior College, Visakhapatnam</h3>
+          <p>Board of Intermediate Education, A.P</p>
+          <strong class="score">Percentage: 82.9%</strong>
+        </div>
+      </div>
+      <div class="t-item reveal">
+        <span class="dot"></span>
+        <div class="card glass">
+          <span class="date">2019 – 2020</span>
+          <h3>Sri Chaitanya Educational Institution, Visakhapatnam</h3>
+          <p>Central Board of Secondary Education (CBSE)</p>
+          <strong class="score">Percentage: 90.4%</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container">
+    <h2 class="title reveal"><span>07.</span> Contact Me</h2>
+    <p class="sub reveal">Click my email to write to me directly in Gmail.</p>
+    <div class="contact-grid">
+      <div class="contact-cards reveal">
+        <a class="c-card glass" href="https://mail.google.com/mail/?view=cm&fs=1&to=klrenuka007@gmail.com" target="_blank" rel="noopener"><i>✉️</i><div><small>Email</small><b>klrenuka007@gmail.com</b></div></a>
+        <a class="c-card glass" href="tel:+919177832325"><i>📞</i><div><small>Phone</small><b>+91-9177832325</b></div></a>
+        <a class="c-card glass" href="https://www.linkedin.com/in/lalitharenuka" target="_blank" rel="noopener"><i>🔗</i><div><small>LinkedIn</small><b>lalitharenuka</b></div></a>
+        <a class="c-card glass" href="https://github.com/LalithaRenuka" target="_blank" rel="noopener"><i>🐙</i><div><small>GitHub</small><b>LalithaRenuka</b></div></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Lalitha Renuka Kotipalli. Designed &amp; built with HTML, CSS &amp; JavaScript.</p>
+</footer>
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<!-- PROJECT MODAL -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-box glass">
+    <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
